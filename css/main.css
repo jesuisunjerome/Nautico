@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+
+:root {
+  --font-normal: 'Poppins', sans-serif;
+  --big-header: 'Baloo 2', cursive;
+  --big-header-fs: 50px;
+  --header: 'Coda', cursive;
+  --header-fs: 30px;
+
+  --primary: 50, 53, 98;
+  --accent: 166, 125, 65;
+  --white: 255, 255, 255;
+  --light: 234, 235, 237;
+  --azul: 158, 209, 243;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: rgb(var(--primary));
+  font-family: var(--font-normal);
+  background-color: rgb(var(--light));
+}
+
+.accent {
+  color: rgb(var(--accent));
+}
+
+.btn.btn-accent {
+  color: rgb(var(--white));
+  border-radius: 5px;
+  background-color: rgb(var(--accent));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.big-header {
+  font-family: var(--big-header);
+  font-size: var(--big-header-fs);
+}
+
+.big-header span {
+  color: rgb(var(--accent));
+}
+
+.header {
+  font-family: var(--header);
+  font-size: var(--header-fs);
+}
+
+.special-bullet {
+  padding-left: 0;
+}
+
+.special-bullet li {
+  list-style: none;
+  padding: 10px 30px;
+  background-image: url(../img/check-badge.png);
+  background-repeat: no-repeat;
+  background-position: left 5px;
+  background-size: 20px;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 2px;
+  color: rgba(var(--primary), 0.8);
+}
+
+.card .card-body {
+  color: rgb(var(--primary));
+}
+
+.hero {
+  color: rgb(var(--white));
+  height: 550px;
+}
+
+.svg-agua {
+  height: 300px;
+  position: relative;
+}
+
+.svg-agua svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.linear-agua {
+  background: linear-gradient(
+    180deg,
+    rgba(158, 209, 243, 0.15) 0%,
+    rgba(158, 209, 243, 0) 100%
+  );
+}
+
+.img-rectangle {
+  position: relative;
+  height: 500px;
+}
+
+.img-rectangle img {
+  transform: rotate(-1.948deg);
+}
+
+.img-rectangle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: rotate(2.141deg);
+  border: 1px solid rgb(var(--accent));
+  border-radius: 0.5rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.hero-btn a {
+  background-color: rgb(var(--accent));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: rgb(var(--white));
+  border-radius: 0.25rem;
+}
+
+#main-hero {
+  color: rgb(var(--white));
+  min-height: 100vh;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url('../img/bg-home.jpg'), lightgray 50% / cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(var(--primary));
+}
+
+#main-hero .container {
+  padding-top: 220px;
+}
+
+.w-hero h1 {
+  font-family: var(--big-header);
+  font-size: var(--big-header-fs);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 60px;
+}
+
+.w-hero h5 {
+  font-size: 20px;
+}
+
+#main-hero-resume {
+  border-top: 1px solid rgba(var(--light), 0.5);
+}
+
+#main-hero-resume h3 {
+  font-size: var(--header-fs);
+  font-family: var(--header);
+}
+
+#main-hero-resume h5 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#main-hero-resume p {
+  font-size: 15px;
+}
+
+#instalaciones-hero {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80'),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(var(--primary));
+}
+
+#contacto-hero {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url('https://images.unsplash.com/photo-1501771924607-209f42a6e7e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80'),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgb(var(--primary));
+}
+
+#home-servicios .carousel {
+  grid-auto-columns: calc((100% / 4) - 12px);
+}
+
+#contacto-map {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url('../img/nasa1.jpg'), lightgray 50% / cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(var(--primary));
+}
+
+#contacto-map iframe {
+  width: 100%;
+  min-height: 550px;
+  border-radius: 0.5rem;
+}
+
+#contacto-formulario form {
+  background-color: rgb(var(--white));
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+#contacto-formulario label {
+  font-size: 15px;
+  color: rgba(var(--primary), 0.7);
+  margin-bottom: 0.1rem;
+}
+
+#contacto-formulario input,
+#contacto-formulario textarea {
+  color: rgb(var(--primary));
+  border-color: rgb(var(--light));
+  background-color: rgb(var(--light));
+}
+
+#contacto-formulario input:focus,
+#contacto-formulario textarea:focus {
+  box-shadow: inset 0 0 0 1px rgba(var(--accent), 0.4);
+}
+
+.mask-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+}
+
+.mask-card p:first-child {
+  font-size: 20px;
+}
+
+.mask-card p:last-child {
+  font-size: 15px;
+}
+
+section:last-child.py-5 {
+  padding-bottom: 100px !important;
+}
+
+/*********************************************** 
+NAVBAR 
+***********************************************/
+.navbar:not(.active) {
+  box-shadow: none;
+}
+
+.navbar .nav-link.active {
+  color: rgb(var(--white));
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/***********************************************  
+CAROUSEL
+***********************************************/
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel .card {
+  scroll-snap-align: start;
+  list-style: none;
+}
+
+.carousel .card img {
+  height: 390px;
+}
+
+.wrapper svg {
+  cursor: pointer;
+}
+
+.wrapper svg path {
+  transition: all 0.3s;
+}
+
+.wrapper svg:hover path {
+  stroke: rgb(var(--accent));
+  stroke-width: 4px;
+}
+
+/***********************************************  
+FOOTER
+***********************************************/
+footer {
+  background-color: #17181c;
+  color: rgba(var(--white), 0.5);
+}
+
+footer a {
+  color: rgba(var(--white), 0.5);
+}
+
+footer a:hover {
+  color: rgb(var(--accent));
+}
+
+footer a i {
+  transition: all 0.3s;
+}
+
+footer a:hover i {
+  font-size: 1.2rem;
+}
+
+.border-bottom {
+  border-color: rgba(var(--accent), 0.5);
+}
+
+/***********************************************  
+MEDIA QUERIES 
+***********************************************/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .w-hero {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-hero {
+    max-width: 700px;
+  }
+
+  .hero .w-hero {
+    max-width: 600px;
+  }
+
+  #contacto-formulario form {
+    margin-top: -15rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media (max-width: 578px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
